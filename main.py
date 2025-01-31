@@ -18,6 +18,6 @@ app.add_middleware(
 def get_info():
     return JSONResponse(content={
         "email": "apololadanieltolu@gmail.com",
-        "current_datetime": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ").isoformat(),
+        "current_datetime": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "github_url": "https://github.com/DannyBaine-Entity/fastAPI"
     })
