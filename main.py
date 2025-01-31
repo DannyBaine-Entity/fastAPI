@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from datetime import datetime
 import pytz
 
@@ -13,10 +14,11 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-@app.get("/")
+@app.get("/my_info")
 def get_info():
-    return {
+    data = {
         "email": "apololadanieltolu@gmail.com",
         "current_datetime": datetime.now(pytz.utc).isoformat(),
         "github_url": "https://github.com/DannyBaine-Entity/fastAPI"
-}
+    }
+    return JSONResponse(content=data)
