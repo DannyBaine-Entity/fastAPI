@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from datetime import datetime
-import pytz
+import timezone
 
 app = FastAPI()
 
@@ -18,6 +18,6 @@ app.add_middleware(
 def get_info():
     return JSONResponse(content={
         "email": "apololadanieltolu@gmail.com",
-        "current_datetime": datetime.now(pytz.utc).isoformat(),
+        "current_datetime": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ").isoformat(),
         "github_url": "https://github.com/DannyBaine-Entity/fastAPI"
     })
