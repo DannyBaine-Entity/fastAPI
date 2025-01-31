@@ -16,9 +16,8 @@ app.add_middleware(
 
 @app.get("/my_info")
 def get_info():
-    data = {
+    return JSONResponse(content={
         "email": "apololadanieltolu@gmail.com",
         "current_datetime": datetime.now(pytz.utc).isoformat(),
         "github_url": "https://github.com/DannyBaine-Entity/fastAPI"
-    }
-    return JSONResponse(content=data)
+    })

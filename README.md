@@ -55,7 +55,7 @@ This is a simple public API built with FastAPI for HNG12. The API provides the f
     Open your browser and visit:
 
     ```bash
-    http://127.0.0.1:8000
+    http://127.0.0.1:8000/my_info
     ```
 
 ## 📖 API Documentation
