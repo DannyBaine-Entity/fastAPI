@@ -19,4 +19,4 @@ def get_info():
         "email": "apololadanieltolu@gmail.com",
         "current_datetime": datetime.now(pytz.utc).isoformat(),
         "github_url": "https://github.com/DannyBaine-Entity/fastAPI"
-    }
+}
