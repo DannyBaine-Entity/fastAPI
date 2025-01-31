@@ -75,7 +75,7 @@ This is a simple public API built with FastAPI for HNG12. The API provides the f
 ## 🔗 Links
 
 - **GitHub Repository:** [https://github.com/DannyBaine-Entity/fastAPI](#)
-- **Deployment URL:** [https://fastapi-4iqz.onrender.com](#)
+- **Deployment URL:** [https://fastapi-4iqz.onrender.com/my_info](#)
 - **Python Developer Backlink:** [https://hng.tech/hire/python-developers](#)
 
 ## 🛠️ Technologies Used
